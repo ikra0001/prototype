@@ -1,15 +1,60 @@
-<form>
-    <div class="form-elements">
-      <label for="name">Your Name</label>
-      <input type="text" id="fullname" name="fullname" required>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.typekit.net/mha6skt.css">
+    <title>Tim</title>
+</head>
+<body>
+<div class="grid">
+    <header>
+        <img class="logo" src="images/logo/tim-rozin.png" alt="homepage" width="115" height="64">
+        <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+    </header>
+    <form>
+      <div class="form-elements">
+        <label for="name">Your Name</label>
+        <input type="text" id="fullname" name="fullname" required>
+      </div>
+      <div class="form-elements">
+        <label for="email">Your Email</label> 
+        <input type="email" id="email" name="email" required>   
+      </div>
+      <div class="form-elements">
+        <label for="message">Your Message</label>
+        <textarea name="message" id="message"></textarea>
+      </div>
+      <button type="button" value="send">SEND</button> 
+    </form>
     </div>
-    <div class="form-elements">
-      <label for="email">Your Email</label> 
-      <input type="email" id="email" name="email" required>   
-    </div>
-    <div class="form-elements">
-      <label for="message">Your Message</label>
-      <textarea name="message" id="message"></textarea>
-    </div>
-    <button type="button" value="send">SEND</button> 
-  </form>
+    <footer>
+        <ul class="footer-notes">
+            <li class="footer-notes-title">Pages</li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="footer-wrapper">
+            <div class="social">
+                <img class="icon" src="images/icons/linkedin.svg" alt="linkedin">
+                <img class="icon" src="images/icons/github-logo.svg" alt="github">
+                <img class="icon" src="images/icons/instagram-logo.svg" alt="instagram">
+            </div>
+            <p>© 2021 Tim ikramov. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
