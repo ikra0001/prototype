@@ -210,5 +210,44 @@ footer {
     width: 12%;
     padding: 2px;
 }
+/* ABOUT ME PAGE SECTION */
+.about-section {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #4D4D4D;
+    color: white;
+    padding-bottom: 5em;
+    grid-area: main;
+}
+
+.main-about-section {
+    width: 40%;
+    padding: 2em;
+    flex-direction: column;
+}
+
+h2 {
+    color: #E17E26;
+    flex-direction: column;
+}
+/* TARGET MAIN IMAGE AND THEN BOTH IMAGES FOR SIZE ADJUSTMENTS */
+.about-image {
+    width: 70%;
+    padding: 2em;
+}
+
+.about-images {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-text {
+    font-size: 24px;
+    width: 100%;
+    flex-direction: column;
+}
 
 
