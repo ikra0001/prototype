@@ -10,8 +10,8 @@ body {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 0.2fr);
     grid-template-areas:
-      "header header header "
-      "main main main "
+      "header header header"
+      "main main main"
       "wrapper wrapper wrapper"
       "footer footer footer"
 }
@@ -249,5 +249,80 @@ h2 {
     width: 100%;
     flex-direction: column;
 }
+/* CONTACT PAGE SECTION */
+.contact-section {
+    margin: auto;
+    width: 80%;
+    background-color:  #4D4D4D;
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-area: main;
+}
+
+.contact-info {
+    background-color:#E17E26;
+    padding: 2em;
+    border-radius: 18px;
+}
+.contact-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.form-title {
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    width: 83%;
+    padding: 1em;
+    margin-left: auto;
+}
+
+.info-title {
+    font-size: 16px;
+    color: black;
+}
+
+.contact-form {
+    display: flex;
+    width: 34%;
+    flex-direction: column;
+}
+
+form {
+	padding: 2em;
+	padding-left: 1em;
+}
+
+.form-elements {
+    color: white;
+	padding: 14px;
+}
+
+input {
+	width: 100%;
+	padding-bottom: 0.5em;
+	margin-top: 1em;
+}
+
+textarea {
+	width: 100%;
+    margin-top: 1em;
+}
+
+button {
+    font-family: 'Ubuntu', sans-serif;
+    width: 20%;
+    background-color: #E17E26;
+	margin-top: 1em;
+    margin-left: 1em;
+	padding: 0.5em;
+    border-radius: 12px;
+}
+
+
 
 
