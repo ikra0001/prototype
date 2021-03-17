@@ -367,13 +367,25 @@ button {
           "wrapper wrapper wrapper"
           "footer footer footer"
     }
+    /* CHANGE NAVIGATION TO HAMBURGER NAV */
+    nav {
+        background: url(images/icons/menu.svg);
+        background-repeat: no-repeat;
+        width: 50px;
+        height: 50px;
+        margin-top: 2em;
+    }
+
+    nav ul li {
+        display: none;
+    }
 
     .banner-type {
         transition: 0.5s;
         margin: 0;
         padding: 1em;
     }
-
+   /*  CARD MENU RESPONSIVE RESIZE */
     .wrapper {
         flex-direction: column;
     }
@@ -406,7 +418,7 @@ button {
         flex-direction: column;
         justify-content: center;
     }
-
+    /* ABOUT PAGE RESPONSIVE ADJUSTMENTS */
     .about-section {
         flex-direction: column;
     }
@@ -418,6 +430,18 @@ button {
     .about-images {
         width: 80%;
         align-items: center;
+    }
+    /* CONTACT PAGE COLUMN AND WIDTH ARRANGMENT */
+    .contact-wrapper {
+        flex-direction: column;
+    }
+
+    .contact-form {
+        width: auto;
+    }
+    /* FOOTER SOCIAL ICON RESPONSIVE RESIZE  */
+    .icon {
+        width: 23%;
     }
 }
 
