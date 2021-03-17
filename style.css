@@ -62,10 +62,11 @@ main {
 
 .banner-type {
     font-family: lores-9-plus-narrow, sans-serif;
+    transition: 0.5s;
     font-size: 54px;
     font-weight: 400;
     color: #E17E26;
-    padding-left: 5em;
+    padding-left: 4em;
     padding-top: 1em;
 }
 
@@ -322,6 +323,104 @@ button {
 	padding: 0.5em;
     border-radius: 12px;
 }
+
+@media only screen and (max-width: 1208px) {
+    .wrapper {
+        margin-top: -3em;
+    }
+    
+    .menu-card-ux {
+        width: 15%;
+        height: 250px;
+    }
+
+    .menu-card-logos {
+        width: 15%;
+        height: 250px;
+    }
+
+    .menu-card-client {
+        margin-top: 5.5em;
+    }
+
+    .menu-card-personal {
+        margin-bottom: 5.5em;
+    }
+    
+    .card-list-column {
+        display: flex;
+        width: 30%;
+        margin: 1em;
+        height: 527px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (max-width: 798px) {
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 0.2fr);
+        grid-template-areas:
+          "header header header"
+          "main main main"
+          "wrapper wrapper wrapper"
+          "footer footer footer"
+    }
+
+    .banner-type {
+        transition: 0.5s;
+        margin: 0;
+        padding: 1em;
+    }
+
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .menu-card-ux {
+        width: 50%;
+        margin-top: 5em;
+        height: 80px;
+    }
+
+    .menu-card-logos {
+        width: 50%;
+        margin-top: 1em;
+        height: 80px;
+    }
+
+    .menu-card-client {
+        margin-top: 1em;
+    }
+
+    .menu-card-personal {
+        margin-top: 1em;
+    }
+
+    .card-list-column {
+        display: flex;
+        margin: 0;
+        width: 422px;
+        height: 527px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .about-section {
+        flex-direction: column;
+    }
+
+    .main-about-section {
+        width: 80%;
+    }
+
+    .about-images {
+        width: 80%;
+        align-items: center;
+    }
+}
+
 
 
 
