@@ -2,11 +2,40 @@ body {
     background-color: #373737;
 }
 
+.grid {
+    margin: 0 auto;
+    font-family: 'Ubuntu', sans-serif;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 0.5fr);
+    grid-template-areas:
+      "header header header "
+      "main main main "
+      "wrapper wrapper wrapper"
+}
+
+header {
+    display: flex;
+    grid-area: header;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-top: 1em;
+    margin-left: 1em;
+}
+
 nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 24px;
+    margin-right: 4em;
+    font-weight: 400;
 	list-style: none;
-	padding: 1rem;
-	font-size: 22px;
-	font-weight: lighter;
 	letter-spacing: 0px;
 }
 
@@ -16,8 +45,77 @@ nav ul a {
 }
 
 nav ul li {
-	display: inline-block;
-	padding: 0.25rem;
+	padding: 1rem;
 	text-align: right;
 	box-sizing: border-box;
 }
+
+main {
+    display: flex;
+    height: 350px;
+    background: url(images/assets/banner.jpg);
+    background-size: cover;
+    grid-area: main;
+}
+
+.banner-type {
+    font-family: lores-9-plus-narrow, sans-serif;
+    font-size: 54px;
+    font-weight: 400;
+    color: #E17E26;
+    padding-left: 5em;
+    padding-top: 1em;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    grid-area: wrapper;
+}
+
+.menu-card-ux {
+    display: flex;
+    font-weight: regular;
+    color: white;
+    background: url(images/assets/ux.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px;
+    align-items: center;
+}
+
+.menu-card-logos {
+    display: flex;
+    font-weight: regular;
+    color: white;
+    background: url(images/assets/ux.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px;
+    align-items: center;
+}
+
+.menu-card-client {
+    display: flex;
+    font-weight: regular;
+    color: white;
+    background: url(images/assets/ux.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px;
+    align-items: center;
+}
+
+.menu-card-personal {
+    display: flex;
+    font-weight: regular;
+    color: white;
+    background: url(images/assets/ux.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px;
+    align-items: center;
+}
+
+
